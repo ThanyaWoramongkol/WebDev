@@ -1,0 +1,40 @@
+#webtitle {
+    font-size: 72px;
+    color: black;
+    font-weight: 200px;
+}
+
+.box {
+    display: inline-block;
+    width: 600px;
+    border: 2 black solid;
+    padding: 50px 20px
+}
+
+p {
+    font-size: 36px;
+    font-weight: 800px;
+    color: darkslategrey;
+    margin: 50px 15px;
+}
+
+.big {
+    font-size: 48px;
+}
+
+.bgcolor {
+    display: inline-block;
+    width: 450px;
+    border: 10 black solid;
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+body {
+    background-image: url('bg.png');
+}
+
+
+.margin {
+    margin: 40px 10px;
+}
