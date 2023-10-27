@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function setUsername() {
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setProfileImage() {
+            document.getElementById("profileimage").style.backgroundImage = "url(" +document.getElementById("profileimg").value + ")"; //url(*link to your image)
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileimage">
+            </div>
+            <div class="noti">6</div>
+        </div>
+        <div class="username">
+            <a href="https://github.com/ThanyaWoramongkol" target="_blank" class="on-hover">
+            <p style="font-size: x=larger; font-weight: 600;" id="username-p">Thanya's Gallery</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label style="font-weight: 400;">Username</label><input style="margin-left: 10px;"
+                    type="text" id="username"><button id="setUsername" onclick="setUsername()">Apply</button></div>
+            <div><label style="font-weight: 400;">Profile Image</label><input style="margin-left: 10px;"
+                    type="text" id="profileimg"><button id="setProfile" onclick="setProfileImage()">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image: url(/4.webp);"></div>
+            <div class="gallery-item" style="background-image: url(/1.webp);"></div>
+            <div class="gallery-item" style="background-image: url(/3.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(/profile.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(/10.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(/9.jpg);"></div>
+            <div class="gallery-item col-span" style="background-image: url(/11.webp);"></div>
+            <div class="gallery-item" style="background-image: url(/8.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(/6.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(/2.jpg);"></div>
+            <!-- <div class="gallery-item" style="background-image: url(/PIC/2.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(/PIC/2.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(/PIC/2.jpg);"></div> -->
+        </div>
+    </div>
+
+</body>
+
+</html>
